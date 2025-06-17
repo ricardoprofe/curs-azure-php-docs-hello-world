@@ -1,9 +1,9 @@
 <?php
 // Recuperar variables de entorno
-$dbHost = getenv('DB_HOST');
-$dbName = "prueba";         
-$dbUser = getenv('DB_USER');
-$dbPass = getenv('DB_PASSWORD');
+$dbHost = getenv('cefire-webapp01b-server.mysql.database.azure.com');
+$dbName = "cefire-webapp01b-database";         
+$dbUser = getenv('ejqrdwuuoq');
+$dbPass = getenv('Yt)G@t_iQe~rG5C');
 
 if (!$dbHost || !$dbUser || $dbPass === false) {
     throw new \RuntimeException('Faltan variables de entorno para la conexión a la base de datos.');
