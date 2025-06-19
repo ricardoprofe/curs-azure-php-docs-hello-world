@@ -51,7 +51,7 @@ if (!$conn) {
         if ($result) {
             echo "<h1>Continguts disponibles:</h1>";
             foreach ($result as $row) {
-                echo "<p>ID: " . htmlspecialchars($row['id']) . " - Contingut: " . htmlspecialchars($row['contingut']) . "</p>";
+                echo "<p>ID: " . htmlspecialchars($row['id']) . " - Contingut: " . htmlspecialchars($row['contenido']) . "</p>";
             }
         } else {
             echo "<h1>No hay continguts disponibles</h1>";
