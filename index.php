@@ -75,6 +75,7 @@ if (!$conn) {
     <title>Document</title>
 </head>
 <body>
+    <hr>
     <form action="index.php" method="post">
         <label for="contingut">contingut:</label>
         <input type="text" id="contingut" name="contingut" required>
