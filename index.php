@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($conn) {
             try {
                 // Preparar la consulta SQL
-                $stmt = $conn->prepare("INSERT INTO continguts (contingut) VALUES (:contingut)");
+                $stmt = $conn->prepare("INSERT INTO prueba (contenido) VALUES (:contingut)");
                 // Vincular el parámetro
                 $stmt->bindParam(':contingut', $contingut, PDO::PARAM_STR);
                 // Ejecutar la consulta
@@ -42,7 +42,7 @@ if (!$conn) {
 } else {
     try {
         // Preparar la consulta SQL
-        $stmt = $conn->prepare("SELECT id, contingut FROM continguts");
+        $stmt = $conn->prepare("SELECT id, contenido FROM prueba");
         // Ejecutar la consulta
         $stmt->execute();
         // Obtener los resultados
